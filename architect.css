@@ -62,7 +62,7 @@ nav a{
 /* main style start */
 main{
    max-width: 1440px;
-   margin: 0 auto;
+   margin: 70px auto;
 }
 /* team style start */
 .team-container{
@@ -108,15 +108,25 @@ main{
    header{
       padding: 20px;
    }
-   nav{
+   nav,
+   .team-container
+   {
       flex-direction: column;
+   }
+   .team-img-container{
+      grid-template-columns: 1fr;
+   }
+   .team-container{
+      padding: 0 20px;
    }
 }
 @media screen and (min-width: 576px) and (max-width: 960px) {
    header{
       padding: 50px;
    }
-   nav{
+   nav,
+   .team-container
+   {
       flex-direction: column;
    }
 }
